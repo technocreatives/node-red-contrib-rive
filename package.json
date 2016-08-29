@@ -1,0 +1,32 @@
+{
+  "name": "node-red-contrib-rive",
+  "version": "0.0.1",
+  "description": "Node RED RiveScript node allowing simple chatbot implementation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/technocreatives/node-red-contrib-rive.git"
+  },
+  "keywords": [
+    "rivescript",
+    "bot",
+    "node-red"
+  ],
+  "node-red": {
+    "nodes": {
+      "rive": "rive/rive.js"
+    }
+  },
+  "author": "oskar.hagberg@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/technocreatives/node-red-contrib-rive/issues"
+  },
+  "homepage": "https://github.com/technocreatives/node-red-contrib-rive#readme",
+  "dependencies": {
+    "rivescript": "^1.15.0"
+  }
+}
