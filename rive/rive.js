@@ -30,7 +30,7 @@ module.exports = function(RED) {
       var reply = node.bot.reply(context.user, msg.payload);
 
       if(reply.match(/^ERR:/)) {
-        msg.payload = reply;
+        msg.error = reply;
         node.send([null,msg]);
       } else {
         context.vars = node.bot.getUservars(context.user);
