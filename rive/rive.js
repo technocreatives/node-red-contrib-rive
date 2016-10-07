@@ -13,6 +13,13 @@ module.exports = function(RED) {
 
     this.on('input', function(msg) {
 
+      if(msg.script) {
+        node.script = msg.script;
+        node.bot = new RiveScript({utf8: true, debug: false});
+        node.bot.stream(node.script);
+        node.bot.sortReplies();
+      }
+
       var context = (typeof msg.context === 'object' && msg.context !== null) ? msg.context : {};
       msg.context = context;
       context.user = context.user || 'localuser';
