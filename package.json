@@ -1,6 +1,6 @@
 {
   "name": "node-red-contrib-rive",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Node RED RiveScript node allowing simple chatbot implementation",
   "main": "index.js",
   "scripts": {
